@@ -4,9 +4,9 @@ class Tokopedia {
     this.cart = [];
   }
 
-  addProduct(name, stock, category, attributes) {
+  addProduct(name, stock, category, attributes, color) {
     if (this.validateCategory(category, attributes)) {
-      this.products.push({ name, stock, category, attributes });
+      this.products.push({ name, stock, category, attributes , color});
       console.log("Produk berhasil ditambahkan.");
     } else {
       console.log(
@@ -77,11 +77,11 @@ const toko = new Tokopedia();
 toko.addProduct("buku harry potter", 5, "buku", {
   author: "jk rowling",
   totalPage: 450,
-});
-toko.addProduct("kemeja", 10, "pakaian", { ukuran: "M", brand: "Uniqlo" });
-toko.addProduct("celana", 3, "pakaian", { ukuran: "L", brand: "dickies" });
+}, 'hitam');
+toko.addProduct("kemeja", 10, "pakaian", { ukuran: "M", brand: "Uniqlo" }, 'coklat');
+toko.addProduct("celana", 3, "pakaian", { ukuran: "L", brand: "dickies" }, 'merah');
 
-toko.editProduct("kemeja", { ukuran: "XL", brand: "H&M" });
+toko.editProduct("kemeja", { ukuran: "XL", brand: "H&M" }, 'ungu');
 
 toko.deleteProduct("celana");
 
