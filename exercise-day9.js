@@ -142,10 +142,10 @@
     let result = ''
     for (let i = 1; i <= height; i++){
       for (let j = height; j >= i; j--){
-        result += '   '
+        result += ' '
       }
-      for (let k = 1; k <= (i - 1) * 2 + 1; k++){
-        result += ' * '
+      for (let k = 1; k <= i; k++){
+        result += '* '
       }
 
       result += `\n`
