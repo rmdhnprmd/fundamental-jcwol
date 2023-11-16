@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 20px 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.modal {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 30px;
+  width: 600px;
+}
+
+.image {
+  width: 500px;
+  height: 150px;
+  margin-bottom: 12px;
+}
+
+.modal h1 {
+  margin-bottom: 12px;
+}
+
+.modal p {
+  margin-bottom: 10px;
+}
+
+.modal button {
+  background-color: blue;
+  color: white;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modal button:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+.table-wrapper {
+  width: 560px;
+  text-align: center;
+}
+
+table, td , th {
+  background-color: lightyellow;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+table img {
+  width: 150px;
+}
